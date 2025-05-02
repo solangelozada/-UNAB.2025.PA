@@ -223,6 +223,3 @@ display.show_invoice(invoice, total)
 #Para detectar un alto acoplamiento en mi código, suelo observar si una clase necesita conocer demasiados detalles internos de otras o si los cambios en una clase obligan a modificar varias más. Esto complica el mantenimiento y hace más difícil reutilizar componentes.
 #Trato de mantener bajo acoplamiento separando funciones en clases específicas, usando interfaces claras y pasando solo la información necesaria.
 
-
-
-
