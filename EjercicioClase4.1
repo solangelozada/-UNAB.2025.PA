@@ -1,0 +1,44 @@
+#Ejercicio 1
+#a) Rehaga al menos 3 clases con el constructor type
+
+# Defino la clase Persona con un método saludo
+Persona = type('Persona', (), {
+    'saludo': lambda self: print('Hola, soy una persona.')
+})
+
+# Creo la clase Estudiante que hereda de Persona
+Estudiante = type('Estudiante', (Persona,), {
+    'estudiar': lambda self: print('Estoy estudiando.')
+})
+
+# También hice la clase Profesor que también hereda de Persona
+Profesor = type('Profesor', (Persona,), {
+    'enseñar': lambda self: print('Estoy enseñando.')
+})
+
+# Pruebo las clases que hice
+p = Persona()
+p.saludo()
+
+e = Estudiante()
+e.saludo()
+e.estudiar()
+
+pr = Profesor()
+pr.saludo()
+pr.enseñar()
+
+
+#b) ¿Cómo se deben definir los métodos con el constructor type?
+#Para definir métodos cuando uso type, tengo que escribir las funciones dentro del diccionario que paso como tercer parámetro. Los métodos deben tener self como primer argumento, igual que en una clase normal.
+#Puedo usar funciones normales o lambda si es algo corto. 
+# Forma con función normal
+def mostrar(self):
+    print("Hola desde el método.")
+
+MiClase = type('MiClase', (), {'mostrar': mostrar})
+
+# Forma con lambda
+OtraClase = type('OtraClase', (), {'saludo': lambda self: print("¡Hola!")})
+
+
