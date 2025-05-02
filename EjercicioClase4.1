@@ -1,5 +1,5 @@
-#Ejercicio 1
-#a) Rehaga al menos 3 clases con el constructor type
+#Ejercicio 1:
+#a) Rehaga al menos 3 clases con el constructor type.
 
 # Defino la clase Persona con un método saludo
 Persona = type('Persona', (), {
@@ -30,8 +30,9 @@ pr.enseñar()
 
 
 #b) ¿Cómo se deben definir los métodos con el constructor type?
-#Para definir métodos cuando uso type, tengo que escribir las funciones dentro del diccionario que paso como tercer parámetro. Los métodos deben tener self como primer argumento, igual que en una clase normal.
+#Para definir métodos cuando uso type, tengo que escribir las funciones dentro del diccionario que paso como tercer #parámetro. Los métodos deben tener self como primer argumento, igual que en una clase normal.
 #Puedo usar funciones normales o lambda si es algo corto. 
+
 # Forma con función normal
 def mostrar(self):
     print("Hola desde el método.")
@@ -40,5 +41,3 @@ MiClase = type('MiClase', (), {'mostrar': mostrar})
 
 # Forma con lambda
 OtraClase = type('OtraClase', (), {'saludo': lambda self: print("¡Hola!")})
-
-
