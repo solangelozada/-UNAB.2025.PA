@@ -1,5 +1,4 @@
 #1. Revisión de Programación Imperativa
-
 #Pregunta teórica:
 #¿Qué caracteriza a la programación imperativa y en qué se diferencia de la programación declarativa?
 #-En programación imperativa, se define cómo se realizan las operaciones, es decir, se especifican los pasos exactos para lograr el resultado.
@@ -64,8 +63,6 @@ print(multiplicar_pares([1, 2, 3, 4, 5, 6]))  # Salida: [6, 12, 18]
 #-Herencia: Permite crear nuevas clases a partir de clases existentes, reutilizando y extendiendo sus funcionalidades. Las clases hijas heredan atributos y métodos de las clases padres.
 
 #-Polimorfismo: Permite que diferentes clases implementen el mismo método de manera diferente. Las subclases pueden sobrescribir métodos de la clase base.
-
-
 
 #Mini autoevaluación
 #1. ¿Cuál es la diferencia entre encapsulamiento y abstracción?
