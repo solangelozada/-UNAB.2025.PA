@@ -1,6 +1,6 @@
 #1) Verdadero o Falso:
  #a) El acoplamiento bajo favorece que una clase se pueda reutilizar con menos dependencias. (VERDADERO)
- #b) La encapsulación impide el acceso a los atributos de una clase desde fuera de sus métodos.(FALSO)
+ #b) La encapsulación impide el acceso a los atributos de una clase desde fuera de sus métodos.(VERDADERO)
  #c) type(objeto) devuelve la clase a la que pertenece objeto.(VERDADERO)
  #d) La abstracción consiste en ocultar la complejidad interna y mostrar solo lo esencial.(VERDADERO)
 
